@@ -4,3 +4,4 @@ Grey
 =======
 Black
 >>>>>>> 297a613 (Black)
+Pink is not a color in the rainbow.
