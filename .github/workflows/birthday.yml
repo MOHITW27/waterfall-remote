@@ -19,7 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pandas openpyxl smtplib email-validator
+          pip install pandas openpyxl email-validator
 
       - name: Run birthday script
         run: python send_birthday.py
