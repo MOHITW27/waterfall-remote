@@ -13,7 +13,7 @@ today = datetime.today().strftime("%m-%d")
 # Email credentials
 EMAIL_USER = os.getenv("EMAIL_USER")
 EMAIL_PASS = os.getenv("EMAIL_PASS")
-SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.office365.com")
+SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT", 587))
 
 # Loop through rows
@@ -109,4 +109,5 @@ for _, row in df.iterrows():
             print(f"✅ Birthday email sent to {name} ({to_email})")
         except Exception as e:
             print(f"❌ Failed to send email to {to_email}: {e}")
+
 
