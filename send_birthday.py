@@ -5,7 +5,7 @@ from datetime import datetime
 import os
 
 # Load Excel file
-df = pd.read_excel("birthdays.xlsx")
+df = pd.read_excel("Birthdays.xlsx")
 
 # Get today's month-day
 today = datetime.today().strftime("%m-%d")
@@ -109,3 +109,4 @@ for _, row in df.iterrows():
             print(f"✅ Birthday email sent to {name} ({to_email})")
         except Exception as e:
             print(f"❌ Failed to send email to {to_email}: {e}")
+
