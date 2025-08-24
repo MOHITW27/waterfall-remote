@@ -24,7 +24,7 @@ for _, row in df.iterrows():
         name = row["Name"]
 
         # 🎂 Hosted image URL (replace with your repo image or CDN)
-        birthday_image = "https://i.ibb.co/7nqgN2J/birthday-cake.png"
+        birthday_image = "https://github.com/MOHITW27/waterfall-remote/blob/master/Happy_Birthday_Image.JPG"
 
         # HTML Email Content
         subject = "🎉 Happy Birthday from Nokia!"
@@ -109,5 +109,6 @@ for _, row in df.iterrows():
             print(f"✅ Birthday email sent to {name} ({to_email})")
         except Exception as e:
             print(f"❌ Failed to send email to {to_email}: {e}")
+
 
 
